@@ -13,7 +13,7 @@ namespace MyRabbitMQArchive.WorkQueues.NewTask
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
             {
-                channel.QueueDeclare(queue: "task_queue", durable: false, exclusive: false, autoDelete: false, arguments: null);
+                channel.QueueDeclare(queue: "task_queue_with_message_acknowledgements", durable: true, exclusive: false, autoDelete: false, arguments: null);
 
                 var message = GetMessage(args);
                 var parsedBody = Encoding.UTF8.GetBytes(message);
@@ -21,8 +21,8 @@ namespace MyRabbitMQArchive.WorkQueues.NewTask
                 var properties = channel.CreateBasicProperties();
                 properties.Persistent = true;
 
-                channel.BasicPublish(exchange: string.Empty, routingKey: "task_queue", basicProperties: properties, body: parsedBody);
-
+                channel.BasicPublish(exchange: string.Empty, routingKey: "task_queue_with_message_acknowledgements", basicProperties: properties, body: parsedBody);
+                
                 Console.WriteLine($"Sent body: {message}");
             }
         }
