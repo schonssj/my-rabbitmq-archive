@@ -1,0 +1,3 @@
+# My RabbitMQ archive.
+
+This is my personal RabbitMQ archive. Working on it...
