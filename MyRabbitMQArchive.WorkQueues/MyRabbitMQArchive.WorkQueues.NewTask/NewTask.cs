@@ -29,7 +29,7 @@ namespace MyRabbitMQArchive.WorkQueues.NewTask
 
         private static string GetMessage(string[] args)
         {
-            return ((args.Length > 0) ? String.Join(" ", args) : "Hello World!");
+            return (args.Length > 0) ? String.Join(" ", args) : "Hello World!";
         }
     }
 }
