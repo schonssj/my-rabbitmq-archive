@@ -17,9 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyRabbitMQArchive.WorkQueue
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyRabbitMQArchive.PublishSubscribe", "MyRabbitMQArchive.PublishSubscribe", "{8D2F812C-9EF5-45EE-BB93-AB9A546D363B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRabbitMQArchive.PublishSubscribe.EmitLogs", "MyRabbitMQArchive.PublishSubscribe\MyRabbitMQArchive.PublishSubscribe.EmitLogs\MyRabbitMQArchive.PublishSubscribe.EmitLogs.csproj", "{7DEAD39A-FFDD-4441-9A26-1935631E8276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRabbitMQArchive.PublishSubscribe.EmitLogs", "MyRabbitMQArchive.PublishSubscribe\MyRabbitMQArchive.PublishSubscribe.EmitLogs\MyRabbitMQArchive.PublishSubscribe.EmitLogs.csproj", "{7DEAD39A-FFDD-4441-9A26-1935631E8276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRabbitMQArchive.PublishSubscribe.ReceiveLogs", "MyRabbitMQArchive.PublishSubscribe\MyRabbitMQArchive.PublishSubscribe.ReceiveLogs\MyRabbitMQArchive.PublishSubscribe.ReceiveLogs.csproj", "{30BA9AF6-F02F-40FF-A78D-1543A67C353C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRabbitMQArchive.PublishSubscribe.ReceiveLogs", "MyRabbitMQArchive.PublishSubscribe\MyRabbitMQArchive.PublishSubscribe.ReceiveLogs\MyRabbitMQArchive.PublishSubscribe.ReceiveLogs.csproj", "{30BA9AF6-F02F-40FF-A78D-1543A67C353C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyRabbitMQArchive.Routing", "MyRabbitMQArchive.Routing", "{2F5D6713-BDAD-4B71-B6C6-3C4D0423B7D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRabbitMQArchive.Routing.ReceiveLogsDirect", "MyRabbitMQArchive.Routing\MyRabbitMQArchive.Routing.ReceiveLogsDirect\MyRabbitMQArchive.Routing.ReceiveLogsDirect.csproj", "{DEB2CD5D-B0FE-4497-91C3-F5E7020668AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRabbitMQArchive.Routing.EmitLogDirect", "MyRabbitMQArchive.Routing\MyRabbitMQArchive.Routing.EmitLogDirect\MyRabbitMQArchive.Routing.EmitLogDirect.csproj", "{5E27B24E-E04D-46A4-B8DF-1FBAC873B8EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,14 @@ Global
 		{30BA9AF6-F02F-40FF-A78D-1543A67C353C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30BA9AF6-F02F-40FF-A78D-1543A67C353C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30BA9AF6-F02F-40FF-A78D-1543A67C353C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB2CD5D-B0FE-4497-91C3-F5E7020668AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB2CD5D-B0FE-4497-91C3-F5E7020668AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB2CD5D-B0FE-4497-91C3-F5E7020668AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB2CD5D-B0FE-4497-91C3-F5E7020668AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E27B24E-E04D-46A4-B8DF-1FBAC873B8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E27B24E-E04D-46A4-B8DF-1FBAC873B8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E27B24E-E04D-46A4-B8DF-1FBAC873B8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E27B24E-E04D-46A4-B8DF-1FBAC873B8EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +76,8 @@ Global
 		{1C368621-39BC-4365-9990-E666D076E13F} = {004EA3B9-AEF0-4501-A135-C2A5341DD342}
 		{7DEAD39A-FFDD-4441-9A26-1935631E8276} = {8D2F812C-9EF5-45EE-BB93-AB9A546D363B}
 		{30BA9AF6-F02F-40FF-A78D-1543A67C353C} = {8D2F812C-9EF5-45EE-BB93-AB9A546D363B}
+		{DEB2CD5D-B0FE-4497-91C3-F5E7020668AF} = {2F5D6713-BDAD-4B71-B6C6-3C4D0423B7D0}
+		{5E27B24E-E04D-46A4-B8DF-1FBAC873B8EB} = {2F5D6713-BDAD-4B71-B6C6-3C4D0423B7D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66C47907-7035-4335-8ED5-BB937F6F0099}
